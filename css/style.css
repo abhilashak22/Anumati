@@ -1,0 +1,14 @@
+/* Anumati Theme - Vidya's Frontend */
+header {
+    background-color: #2c3e50; /* Dark Navy */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid #27ae60; /* Success Green */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
