@@ -4,20 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anumati - Digital Leave Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Anumati</h1>
-        <p>Paperless hostel Leave System</p>
+        <div class="container">
+            <h1>Anumati</h1>
+            <p>Paperless Hostel Leave Management System</p>
+        </div>
     </header>
 
-    <main id="app">
-        <h2>Welcome</h2>
-        <p>Your digital leave portal is initializing...</p>
+    <main id="app" class="container">
+        <section class="welcome-section">
+            <h2>Welcome to the Portal</h2>
+            <p>Please select your role to continue:</p>
+        </section>
+
+        <div class="role-selection">
+            <div class="role-card" onclick="location.href='student.html'">
+                <div class="icon">👨‍🎓</div>
+                <h3>Student</h3>
+                <p>Apply for leave and track status</p>
+                <button class="btn">Login as Student</button>
+            </div>
+
+            <div class="role-card" onclick="location.href='parent.html'">
+                <div class="icon">👨‍👩‍👧</div>
+                <h3>Parent</h3>
+                <p>Verify and approve child's leave</p>
+                <button class="btn">Login as Parent</button>
+            </div>
+
+            <div class="role-card" onclick="location.href='warden.html'">
+                <div class="icon">🧑‍💼</div>
+                <h3>Warden</h3>
+                <p>Final approval and record management</p>
+                <button class="btn">Login as Warden</button>
+            </div>
+        </div>
     </main>
 
+    <footer>
+        <p>&copy; 2026 Anumati Project - Developed for [Your College Name]</p>
+    </footer>
+
     <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
